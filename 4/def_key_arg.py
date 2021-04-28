@@ -3,8 +3,7 @@
 i = 0
 # demonstrates when the evaluation for default arguments happens
 # notice that i gets a new value right after the function
-# and before it is called
-def eval_demo(num = i):
+def eval_demo(num=i):
     print(num)
 i = 5
 eval_demo()
@@ -18,8 +17,8 @@ print(list_def_demo(2))
 print(list_def_demo(5, []))
 print(list_def_demo(3))
 print("----------")
-# here there is no default list and a empty one is created
-# everytime one is not provided
+# here there is no default list and
+# a empty one is created if one is not provided
 def list_def_demo2(num, empty=None):
     if empty == None:
         empty = []
@@ -40,4 +39,4 @@ def ask_ok(prompt, retries=4, reminder="Please try again"):
             raise ValueError("invalid user response")
         print(reminder)
 print(ask_ok("yes or nope: "))
-print(ask_ok("yes or nope round 2: ", reminder = "fail"))
+print(ask_ok("yes or nope round 2: ", reminder="fail"))

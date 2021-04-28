@@ -19,3 +19,6 @@ def combined(pos_only, /, standard, *, kwd_only):
 # here key_words dictionary allows key named name
 def no_clash(name, /, **key_words):
     pass
+
+# *name and **name may be used to create a variadict function
+# that receives a tuple and a dictionary respectively
